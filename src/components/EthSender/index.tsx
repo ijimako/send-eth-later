@@ -45,6 +45,8 @@ export const EthSender = () => {
           <a
             href={"https://ropsten.etherscan.io/tx/" + txnHash}
             aria-label="Link to Etherscan to view transaction"
+            target="_blank"
+            rel="noreferrer"
           >
             View in explorer
           </a>
