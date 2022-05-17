@@ -1,6 +1,14 @@
-# Getting Started with Create React App
+# Ethereum Sender
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a simple dApp allowing any user to send ethereum at a later date and time.
+
+Thanks to the [Autonomy Network](https://www.autonomynetwork.io/), we are using their smart contract to make this dApp possible. 
+
+## Install
+`nvm use` && `npm i` && `npm start` should get you started right away.
+
+## To do
+- Keep wallet connected when refreshing page. Not a big deal at the moment as it is a SPA.
 
 ## Available Scripts
 

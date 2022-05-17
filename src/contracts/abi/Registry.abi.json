@@ -1,0 +1,51 @@
+[
+  {
+    "inputs": [
+      {
+        "internalType": "address",
+        "name": "target",
+        "type": "address"
+      },
+      {
+        "internalType": "address payable",
+        "name": "referer",
+        "type": "address"
+      },
+      {
+        "internalType": "bytes",
+        "name": "callData",
+        "type": "bytes"
+      },
+      {
+        "internalType": "uint112",
+        "name": "ethForCall",
+        "type": "uint112"
+      },
+      {
+        "internalType": "bool",
+        "name": "verifyUser",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "insertFeeAmount",
+        "type": "bool"
+      },
+      {
+        "internalType": "bool",
+        "name": "isAlive",
+        "type": "bool"
+      }
+    ],
+    "name": "newReq",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "id",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "payable",
+    "type": "function"
+  }
+]
