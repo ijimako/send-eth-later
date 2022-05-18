@@ -5,8 +5,8 @@ export const StyledEthSender = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 40vh;
-  height: 40vh;
+  width: 450px;
+  height: 400px;
   background-color: rgb(25, 27, 31);
   color: rgb(33, 36, 151);
   font-family: sans-serif;
