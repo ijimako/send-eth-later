@@ -1,7 +1,6 @@
 import { useWeb3React } from "@web3-react/core"
 import { Web3Provider } from "@ethersproject/providers"
 import Balance from "../Balance"
-import { ConnectWallet } from "../ConnectWallet/index"
 import { networks } from "../../utils/networks"
 import { StyledWallet } from "./StyledWallet"
 import truncate0xAddress from "../../utils/truncate0xAddress"
@@ -11,7 +10,7 @@ export const Wallet = () => {
 
   return (
     <StyledWallet>
-      {active && chainId && account ? (
+      {active && chainId && account && (
         <>
           <div className="network">
             <span className="green-dot">●</span> {networks[chainId]}
@@ -19,8 +18,6 @@ export const Wallet = () => {
           <div className="address">{truncate0xAddress(account)}</div>
           <Balance />
         </>
-      ) : (
-        <ConnectWallet />
       )}
     </StyledWallet>
   )
