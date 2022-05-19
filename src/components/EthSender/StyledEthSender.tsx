@@ -5,7 +5,7 @@ export const StyledEthSender = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 450px;
+  width: calc(100% - 6px);
   height: 400px;
   background-color: rgb(25, 27, 31);
   color: rgb(33, 36, 151);
@@ -18,6 +18,10 @@ export const StyledEthSender = styled.div`
   border: 3px solid black;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
   z-index: 1;
+
+  @media only screen and (min-width: 600px) {
+    width: 450px;
+  }
 
   h1 {
     font-size: 2rem;
@@ -61,7 +65,6 @@ export const StyledEthSender = styled.div`
     .react-calendar {
       border-radius: 0.5rem;
       padding: 0.5rem;
-      width: 322.69px;
 
       .react-calendar__month-view__weekdays {
         font-size: 0.8rem;

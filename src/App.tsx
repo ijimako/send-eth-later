@@ -13,14 +13,16 @@ function getLibrary(provider: any): Web3Provider {
 export const App = () => {
   return (
     <Web3ReactProvider getLibrary={getLibrary}>
-      <div className="header">
-        <div className="logo">
-          <h1>Ethereum Sender</h1>
-          <h5>Send ETH later whenever, at your conveniance.</h5>
+      <div className="App">
+        <div className="header">
+          <div className="logo">
+            <h1><a href="/" aria-label="Home">Ethereum Sender</a></h1>
+            <h5>Send ETH later whenever, at your conveniance.</h5>
+          </div>
+          <Wallet />
         </div>
-        <Wallet />
+        <EthSender />
       </div>
-      <EthSender />
     </Web3ReactProvider>
   )
 }

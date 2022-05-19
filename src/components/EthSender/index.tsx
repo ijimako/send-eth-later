@@ -37,7 +37,7 @@ export const EthSender = () => {
         <div className="lds-dual-ring"></div>
       ) : txnHash ? (
         <div className="success">
-          <p>Your Ξ has been sent. ✅ </p>
+          <p>✅ Your Ξ has been sent. </p>
           <p>
             They will be transfered to the recipient address at the specified
             date and time provided.
